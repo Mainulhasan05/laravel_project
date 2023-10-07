@@ -2,15 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/rifatewu/news.rifatewu.com
-    - /bin/cp -r * $DEPLOYPATH
-    - /bin/rm -rf $DEPLOYPATH/vendor $DEPLOYPATH/node_modules
-    - /bin/mkdir $DEPLOYPATH/storage
-    - /bin/mkdir $DEPLOYPATH/storage/app
-    - /bin/mkdir $DEPLOYPATH/storage/framework
-    - /bin/mkdir $DEPLOYPATH/storage/logs
-    - /bin/mkdir $DEPLOYPATH/storage/framework/cache
-    - /bin/mkdir $DEPLOYPATH/storage/framework/sessions
-    - /bin/mkdir $DEPLOYPATH/storage/framework/views
-    - /bin/chmod -R 755 $DEPLOYPATH/bootstrap $DEPLOYPATH/storage
-    - /bin/mv $DEPLOYPATH/public $DEPLOYPATH/public_html
-    - /bin/rm -f $DEPLOYPATH/.env
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
